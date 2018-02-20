@@ -7,7 +7,7 @@ library(ggplot2)
 library(dplyr)
 library(readr)
 
-tweets_tony <- read_csv("data/tweets/tweets.csv")
+tweets_tony <- read_csv("data/tweets.csv")
 tweets <- tweets_tony %>%
   mutate(person = "Tony") %>%
   mutate(timestamp = ymd_hms(timestamp))
